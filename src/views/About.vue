@@ -10,7 +10,6 @@
     </ion-header>
     <ion-content class="ion-padding">
       <h1>About</h1>
-      <!-- MODAL CODE -->
       <ion-modal :is-open="modalIsOpen" @didDismiss="closeModal()">
         <about-modal @onClose="closeModal" />
       </ion-modal>
@@ -20,7 +19,7 @@
 </template>
 
 <script lang="ts" setup>
-import { defineComponent, ref } from 'vue'
+import { ref } from 'vue'
 import {
   IonContent,
   IonButton,
